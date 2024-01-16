@@ -1,52 +1,34 @@
-# BookCart
+# BookCart cypress and locust tests
 
-An e-commerce application for an online book store created with ASP.NET Core 6.0 and Angular, using SQL Server as database.
+### Install Python:
 
-# Concepts Covered
+Visit the official Python website and download the latest version of Python for your operating system.
+Follow the installation instructions provided on the website.
+Verify Python Installation:
 
-### ASP .NET Core
+Open a terminal or command prompt.
+Run the following commands to verify that Python is installed:
+python --version
+Install Locust:
 
- - Web API created using EF Core DB first approach
- - Policy based Authorization using JWT
- - Repository pattern
- - Dependency Injection
- - Swagger implementation
+Once Python is installed, you can use the pip package manager to install Locust. Run the following command:
+pip install locust
+Verify Locust Installation:
 
-### Angular
+After the installation is complete, verify that Locust is installed by running:
+locust --version
 
- - Angular Material 
- - Routing & Navigation
- - Auth guards
- - Lazy loading of modules
- - HTTP Interceptors
- - Reactive forms
- - Form validation (inbuilt and custom)
- - Pipes
- - Dynamic themes
+To start test:
+Navigate to folder locust
+locust -f file name.py     
 
-# Prerequisites
-- Visual Studio 2022 
-- SQL Server 
-- .NET Core 6.0 SDK or above
-- Node.Js V12.0 or above
+### Cypress
+Install dependencies:
 
-# Steps to run the app
-1. Clone the Repo
-2. Scaffold the database using the [DBScript](https://github.com/AnkitSharma-007/BookCart/blob/master/DBScript/BookDB.txt)
-3. Put your own connection string in [appsettings.json](https://github.com/AnkitSharma-007/BookCart/blob/master/BookCart/appsettings.json) file.
-4. Build and launch the application from Visual Studio.
+Navigate to folder cypress
 
-# Live Demo
-[https://bookcart.azurewebsites.net/](https://bookcart.azurewebsites.net/)
+npm install
+Open Cypress Test Runner:
 
-# Licenese
-[MIT](https://github.com/AnkitSharma-007/BookCart/blob/master/LICENSE)
-
-# See Also
-
-- https://github.com/AnkitSharma-007/MovieApp
-- https://github.com/AnkitSharma-007/blogging-app-with-Angular-CloudFirestore
-- https://github.com/AnkitSharma-007/angular-graphql
-- https://github.com/AnkitSharma-007/angular-forms-validation
-- https://github.com/AnkitSharma-007/Smart-Angular-App-Using-Azure-Cognitive-Services
+npx cypress open
 
